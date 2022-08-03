@@ -10,7 +10,7 @@ function MovieCard(props) {
 
     function handleLike() {
             const headers = {'Authorization': `Bearer ${token}`}
-            const URL_API_LIKES = 'http://localhost:8080/api/v1/likes'
+            const URL_API_LIKES = 'https://movie-app-backend99.herokuapp.com/api/v1/likes'
             const newLikeBody = {
                 itemId: id, 
                 userId: currentUser.id,

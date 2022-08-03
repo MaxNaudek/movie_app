@@ -14,7 +14,7 @@ function IndividualMovie() {
 
   const fetchComments = () => {
     setLoading(true)
-    const URL_API = `http://localhost:8080/api/v1/comments/${id}`;
+    const URL_API = `https://movie-app-backend99.herokuapp.com/api/v1/comments/${id}`;
     console.log('' + URL_API)
     axios
     .get(URL_API)

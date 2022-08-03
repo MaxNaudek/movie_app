@@ -12,7 +12,7 @@ const [profile, setProfile]=useState([])
 
   function getProfile(name, email, password, imgUrl) {
 
-    const URL_GET = `http://localhost:8080/api/v1/users/${currentUser.id}`;
+    const URL_GET = `https://movie-app-backend99.herokuapp.com/api/v1/users/${currentUser.id}`;
     return axios.get(URL_GET)
       .then(response => {setProfile(response.data.user)})
       .catch(error => error.message);

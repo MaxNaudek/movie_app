@@ -16,7 +16,7 @@ function Likes(props) {
     const getMovies = () => {
         setLoading(true)
         setTimeout(() => {
-            const URL_TMDB = `http://localhost:8080/api/v1/likes/${currentUser.id}`;
+            const URL_TMDB = `https://movie-app-backend99.herokuapp.com/v1/likes/${currentUser.id}`;
             console.log('' + URL_TMDB)
             axios
             .get(URL_TMDB)

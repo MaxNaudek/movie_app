@@ -25,7 +25,7 @@ function PostComment(props) {
     }  
 
     const headers = {'Authorization': `Bearer ${token}`}
-    const URL_COMMENT = 'http://localhost:8080/api/v1/comments'
+    const URL_COMMENT = 'https://movie-app-backend99.herokuapp.com/api/v1/comments'
     const newCommentBody = {
         itemId: id,
         userId: currentUser.id,
